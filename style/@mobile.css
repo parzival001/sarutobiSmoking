@@ -1,0 +1,29 @@
+#menuIcon{
+    display: block;
+    padding: 10px;
+}
+#socialMedia{
+    display: none;
+}
+#socialMobile{
+    display: block;
+    
+}
+#socialMobile #menuMobile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+#socialMobile li{
+    background-color:rgb(93, 5, 175);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+}
+#socialMobile{
+    width: 100%;
+    transition: 0.5s;
+}
