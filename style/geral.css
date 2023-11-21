@@ -8,39 +8,35 @@ h1{
     font-size: 30px;
 }
 
-header{
-    width: 100%;
-    height: 60px;
-    background-color: black;
+header, footer{
+    width: 100%; 
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(105,9,149,1) 0%, rgba(0,0,0,1) 100%);
 }
 
+footer{
+    height: 60px;
+}
 #logo{
     width: 250px;
     height: 60px;
-    margin: 0px ;
-    border-radius: 40px;
-    overflow: hidden;
-    float: left;
+    
+   
 }
 body{
-    height: 100vh;
-    background-image: url(../image/fundo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(105,9,149,1) 72%, rgba(0,0,0,1) 100%);
+
     
 }
 
 footer{
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    height: 60px;
-    background-color: black;   
+    font-size: 20px;
+    
 }
 
 form{
     width: 450px;
-    height: auto;
     display: flex;
     flex-direction: column;
     background-color: rgb(93, 5, 175);
@@ -99,25 +95,29 @@ li a{
     text-decoration: none;
     color: aliceblue;
 }
-#socialMedia{
-    padding: 0px 40px 0px 0px;
-    height: 100%;
-    display: flex;
-    align-items:center ;
-    float: right;   
-    
-}
+     
 #menuIcon{
-    width:  60px;
-    height: 60px;
+    width:  50px;
     cursor: pointer;
-    float: right;
     display: none;
 }
 
 .imagem{
     width: 100%;
+    
 }
 #socialMobile li{
     display: none;
+}
+#divHeader{
+    display: flex;
+    align-items: center;
+
+}
+#divFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    color: aliceblue;
 }

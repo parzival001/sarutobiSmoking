@@ -1,5 +1,6 @@
 header{
-    background-color: black;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(105,9,149,1) 0%, rgba(0,0,0,1) 100%);
     
 }
 
@@ -17,15 +18,15 @@ header{
     font-family: alkatra;
     font-size: 20px;
 }
-body{
-    background-color: black;
-}
+
 h1{
-    color: aliceblue;
     font-family: alkatra;
     font-size: 50px;
 }
-
+h3{
+    font-family: alkatra;
+    
+}
 #cardTitle, #cardSobrenos{
     color: rgb(93, 5, 175);
 

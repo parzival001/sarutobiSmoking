@@ -4,13 +4,50 @@ label{
    }
 body{
     display: flex;
-    align-items: center ;
+    align-items: center;
     flex-direction: column;
     gap: 60px;
+}
+h1{
+    display: flex;
+    padding: 10px;
+}label{
+    margin: 0px 10px;
+       }
+       
+    
+    h1{
+        margin: 10px;
+    }
+    
+    a{
+        text-align: center;
+        color: white;
+        
+    }
+    #topo{
+        width: 450px;
+        background-color: aliceblue;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        text-align: center;
+    }
+    main{
+        padding: 50px;
+        display: flex;
+        align-items: center ;
+        flex-direction: column;
+               
+    }
+    
+#divHeader{
+    display: flex;
+    align-items: center;
 }
 
 
 #topo{
+    width: 450px;
     background-color: aliceblue;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
