@@ -1,52 +1,260 @@
-main{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#carrinho{
-    color: aliceblue;
-    width: 500px;
-    height:auto;
-    background-color: aliceblue;
-    display: flex;
+body, button, input, textarea {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+}
+
+.header-list-container {
+  padding: 16px 0;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  color: black;
+  transition: 0.2s;
+}
+
+.nav-item:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 16px
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.produtoLoja {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-title {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.product-image {
+  width: 240px;
+  height: 144px;
+}
+
+.precoProduto {
+  margin-top: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.preco {
+  margin-right: 12px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.button-hover-background {
+  background: purple;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 2px;
+  font-weight: bold;
+
+  transition: 0.2s;
+}
+
+.button-hover-background:hover {
+  background: transparent;
+  color: purple;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-head-item {
+  text-align: start;
+  border-bottom: 1px solid black;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.second-col,
+.third-col {
+  width: 26%;
+}
+
+.cart-product td {
+  padding: 8px 0;
+}
+
+.product-identification {
+  display: flex;
+  align-items: center;
+}
+
+.cart-product-image {
+  width: 120px;
+  height: 70px;
+}
+
+.cart-product-title {
+  margin-left: 16px;
+  font-size: 18px;
+}
+
+.cart-product-price {
+  font-family: "Raleway", sans-serif;
+}
+
+.product-qtd-input {
+  width: 48px;
+  height: 34px;
+  border-radius: 6px;
+  border: 2px solid purple;
+  text-align: center;
+  background: #eee;
+}
+
+.remove-product-button {
+  margin-left: 12px;
+  background: #ff0000;
+  color: white;
+  padding: 10px 8px;
+  border: 0;
+  border-radius: 6px;
+
+  transition: filter 0.2s;
+}
+
+.remove-product-button:hover {
+  filter: brightness(0.8);
+}
+
+.cart-total-container {
+  border-top: 1px solid black;
+  text-align: end;
+  padding: 6px 16px 0 0;
+  font-size: 18px;
+}
+
+.cart-total-container strong {
+  margin-right: 12px;
+}
+
+.purchase-button {
+  display: flex;
+  margin: 24px auto 0;
+  background: purple;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  padding: 16px 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+
+  transition: filter 0.2s;
+}
+
+.purchase-button:hover {
+  filter: brightness(0.8);
+}
+
+
+
+/* Responsividade */
+@media (max-width: 584px) {
+  .movie-title-large {
+    font-size: 36px;
+  }
+
+  .schedule-item {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .schedule-item + .schedule-item {
+    margin-top: 12px;
+  }
+
+  .show-date,
+  .show-place {
+    width: 32%;
+    padding: 4px;
+  }
+
+  .show-city {
+    width: 33%;
+    padding: 4px;
+  }
+
+  .buy-ticket-button {
+    width: 60%;
+    margin-top: 12px;
+    padding: 12px 2px;
+  }
+
+
+  .products-container {
+    justify-content: center;
+  }
+
+  .product-identification {
     flex-direction: column;
-    justify-content: center;
-    border-radius: 10px;
-    box-shadow: 50px;
-    
+    align-items: flex-start;
+  }
+
+  .cart-product-title {
+    margin-top: 6px;
+  }
+
+  .product-qtd-input {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .remove-product-button {
+    display: block;
+    margin: 8px auto 0;
+  }
 }
 
-#carrinhoCabecalho{
-    width: 500px;
-    height: 50px;
-    background-color: black;
-    border-radius: 10px 10px 0px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 5px;
-    
-}
-#produtosCarrinho{
-    width: 500px;
-    height: 200px;
-
-}
-#totalCompra{
-    width: 500px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    background-color: black;
-    justify-content: space-around;
-    border-radius: 0px 0px 10px 10px;
+@media (max-width: 470px) {
+  .about-movie-image {
+    width: 160px;
+  }
+  .movie-title-medium {
+    margin-bottom: 16px;
+  }
 }
 
-#botaoFinalizar{
-    background-color: blueviolet;
-    width: 30%;
-    color: aliceblue;
+body{
+    background-color: white;
 }
